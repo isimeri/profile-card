@@ -27,6 +27,7 @@ body{
     position: relative;
     z-index: 2;
     background-color: white;
+    min-height: 370px;
     height: 45vh;
     min-width: 375px;
     width: 20%;
