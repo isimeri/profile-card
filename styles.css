@@ -3,3 +3,106 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+}
+.supreme-container{
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.top-bubble{
+    position: absolute;
+    top: -50%;
+    left: 0;
+}
+.bottom-bubble{
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+}
+.subject-container{
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    height: 45vh;
+    min-width: 375px;
+    width: 20%;
+    margin: 20vh auto;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.4);
+}
+.main-details-container{
+    background-image: url("./images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*border: 1px solid red;*/
+    height: 100%;
+    padding-top: 26%;
+}
+.subject{
+    border-radius: 50%;
+    border: 6px solid white;
+}
+.painful-div{
+    /*background-color: rgba(0,0,0,0.2);*/
+    display: flex;
+    width: 50%;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+}
+.london{
+    margin: 1rem 0;
+}
+.other-details-container{
+    /*background-color: rgba(0,0,0,0.2);*/
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid hsl(227, 10%, 86%);
+}
+.big-text{
+    font-size: 1.3rem;
+}
+.bold-text{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.small-text{
+    font-size: 0.75rem;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1px;
+    margin-top: 0.7rem;
+}
+.thin-text{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+.attribution{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.attribution > a{
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+.attribution > a:hover{
+    color: white;
+}
+@media(max-width: 375px)
+{
+    .subject-container{
+        width: 95%;
+        min-width: auto;
+    }
+}
